@@ -9,13 +9,28 @@
 <body>
     <section>
         <h2>Calcular el IMC</h2>
-        <form action="">
-            <input id="InputPeso" type="number" placeholder="Peso en Libras" />
-            <input id="InputAltura" type="number" placeholder="Altura en metros" />
+        <form>
+            <input required id="InputPeso" type="number" placeholder="Peso en Libras" />
+            <input required id="InputAltura" type="number" placeholder="Altura en metros" />
             <button type="button" onClick="calcularIMC()">Calcular IMC</button>
         </form>
     </section>
     <p id="ResultadoP"></p>
+    
+    <section>
+        <h2>Registro de datos personales</h2>
+        <input id="InputCarne" type="text" placeholder="Ingresa tu carné">
+        <input id="InputNombre" type="text" placeholder="Ingresa tu nombre">
+        <input id="InputApellido" type="text" placeholder="Ingresa tu apellido">
+        <input id="InputEmail" type="email" placeholder="Ingresa tu correo electrónico">
+        <input id="InputFecha" type="date" placeholder="Ingresa la fecha de inscripción">
+        <button type="button" onClick="agregarDatos()">Guardar datos</button>
+        <div>
+            <p id="DatosPersonales"></p>
+        </div>
+    </section>
+    
     <script src="./imc.js"></script>
+
 </body>
 </html>
